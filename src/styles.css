@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Handjet:wght@300&family=Lumanosimo&family=Poppins&family=Roboto&family=Roboto+Condensed&display=swap');
+
+html{
+  margin: 0px;
+  padding: 0px;
+  /* height: 120%; */
+  /* font-size: 18px; */
+  
+  /* box-sizing: border-box; */
+
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  /* height: 120%; */
+  /* font-size: 18px; */
+  
+  /* box-sizing: border-box; */
+}

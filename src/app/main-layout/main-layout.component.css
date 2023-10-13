@@ -1,0 +1,153 @@
+body {
+  position: relative;
+}
+.layout-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(248, 249, 250);
+}
+.searchDiv{
+  position: sticky;
+  top: 0%;
+  z-index: 5;
+  background-color: rgb(248, 249, 250);
+}
+
+.searchInp{
+  width: 500px;
+  box-shadow: 0px 2px 8px lightgrey;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+h1{
+  color: black;
+}
+
+
+.notesContent{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.09);   
+  margin-top: 15px;
+  transition: all 0.15s ease-out;
+}
+
+.notesBox {
+  transition: all 0.15s ease-out;
+}
+
+/* .notesBox :hover{
+  transform: translateY(-20px);
+} */
+
+
+.cardHead{
+  font-weight:500;
+  transition: all 0.15s ease-out;
+}
+.cardHead :hover{
+  font-weight:500;
+  transition: all 0.15s ease-out;
+}
+
+.cardContent{
+  transition: all 0.15s ease-out;
+  text-align: justify;
+  padding-right: 30px;
+  font-size: 14px;
+}
+.cardContent :active {
+  transform: scale(1);
+}
+
+.closeButton1 {
+  position: absolute;
+  right: 5%;
+  top: 4%;
+  opacity: 0;
+  transition: all 0.15s ease-out;
+}
+.closeButton2 {
+  position: absolute;
+  right: 13%;
+  top: 4%;
+  opacity: 0;
+  transition: all 0.15s ease-out;
+}
+.closeButton3 {
+  position: absolute;
+  right: 22%;
+  top: 4%;
+  opacity: 0;
+  transition: all 0.15s ease-out;
+}
+.closeButton1 i {
+  padding: 5px 7px 5px 7px;
+}
+.closeButton2 i {
+  padding: 5px 7px 5px 7px;
+}
+.closeButton3 i {
+  padding: 5px 7px 5px 7px;
+}
+.notesBox :hover .closeButton1 {
+  opacity: 1;
+}
+.notesBox :hover .closeButton2 {
+  opacity: 1;
+}
+.notesBox :hover .closeButton3 {
+  opacity: 1;
+}
+
+.closeButton1 :hover{
+  background-color: rgb(242, 242, 255);
+  border-radius: 5px;
+}
+.closeButton2 :hover{
+  background-color: rgb(242, 242, 255);
+  border-radius: 5px;
+}
+.closeButton3 :hover{
+  background-color: rgb(242, 242, 255);
+  border-radius: 5px;
+}
+
+.textBox{
+  position: relative;
+  max-height: 60px;
+  overflow: hidden;    
+  mask-image: none;
+  -webkit-mask-image: linear-gradient(180deg, #000 50%, transparent);
+  /* border: 1px solid; */
+  color: rgb(118, 118, 118);
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.btnbtn{
+  padding: 20px 50px;
+  background-color: rgb(138, 136, 255);
+  position: absolute;
+  bottom: 0;
+}
+
+.container{
+  height: 30rem;
+  overflow: scroll;
+  
+
+  
+}
+
+.container::-webkit-scrollbar{
+  width: 1em;
+}

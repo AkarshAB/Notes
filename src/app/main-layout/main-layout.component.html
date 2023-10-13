@@ -1,0 +1,37 @@
+<div class="layout-box">
+
+  <div class="container">
+    <div class="d-flex justify-content-center searchDiv">
+      <input (keyup)="search($event)" type="search" class="form-control mt-4 searchInp" placeholder="Search Notes">
+    </div>
+    <div class="row" *ngFor="let notes of allNotes | filter:searchKey:'title'">
+      <div class="col-4"></div>
+      <div class="col-4">
+
+
+        <!-- //cards -->
+        <div class="notesContainer">
+          <div class="notesBox">
+            <div class="notesContent card w-100" style="width: 18rem;">
+              <div class="closeButton1" (click)="deleteNote(notes.id)"><i class="fa-solid  fa-xmark"></i></div>
+              <div class="closeButton2" routerLink="Edit/{{notes.id}}"><i class="fa-regular fa-pen-to-square"></i></div>
+              <div class="closeButton3" routerLink="View/{{notes.id}}"><i class="fa-regular fa-eye"></i></div>
+              <div class="cardHead m-3 d-flex">
+                {{notes.title}}
+              </div>
+              <div class="textBox">
+                <p class="cardContent mx-3">{{notes.body}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+
+  <div class="btnDiv align-items-end text-center mt-3">
+    <button class="btn btn-outline-primary mb-3" routerLink="Add">Add Notes</button>
+  </div>
+
+</div>

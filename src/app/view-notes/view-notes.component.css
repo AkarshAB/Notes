@@ -1,0 +1,20 @@
+
+.fullLayout{
+  height: 100%;
+  background-color: rgb(248, 249, 250);
+}
+.titleLabel {
+  margin-bottom: 8px;
+}
+.bodyLabel {
+  margin-bottom: 8px;
+  margin-top: 10px
+}
+
+input::placeholder{
+  color: black;
+}
+
+textarea::placeholder{
+  color: rgb(115, 115, 115);
+}
